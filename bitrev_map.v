@@ -1,0 +1,305 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/16/2020 11:49:16 AM
+// Design Name: 
+// Module Name: bitrev_map
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module bitrev_map(
+    input [8:0] in_addr,
+    output reg [8:0] out_addr
+    );
+    
+    always @(*) begin
+    case(in_addr)
+       0: out_addr = 9'd0;
+       1: out_addr = 9'd256;
+       2: out_addr = 9'd128;
+       3: out_addr = 9'd384;
+       4: out_addr = 9'd64;
+       5: out_addr = 9'd320;
+       6: out_addr = 9'd192;
+       7: out_addr = 9'd448;
+       8: out_addr = 9'd32;
+       9: out_addr = 9'd288;
+       10: out_addr = 9'd160;
+       11: out_addr = 9'd416;
+       12: out_addr = 9'd96;
+       13: out_addr = 9'd352;
+       14: out_addr = 9'd224;
+       15: out_addr = 9'd480;
+       16: out_addr = 9'd16;
+       17: out_addr = 9'd272;
+       18: out_addr = 9'd144;
+       19: out_addr = 9'd400;
+       20: out_addr = 9'd80;
+       21: out_addr = 9'd336;
+       22: out_addr = 9'd208;
+       23: out_addr = 9'd464;
+       24: out_addr = 9'd48;
+       25: out_addr = 9'd304;
+       26: out_addr = 9'd176;
+       27: out_addr = 9'd432;
+       28: out_addr = 9'd112;
+       29: out_addr = 9'd368;
+       30: out_addr = 9'd240;
+       31: out_addr = 9'd496;
+       33: out_addr = 9'd264;
+       34: out_addr = 9'd136;
+       35: out_addr = 9'd392;
+       36: out_addr = 9'd72;
+       37: out_addr = 9'd328;
+       38: out_addr = 9'd200;
+       39: out_addr = 9'd456;
+       40: out_addr = 9'd40;
+       41: out_addr = 9'd296;
+       42: out_addr = 9'd168;
+       43: out_addr = 9'd424;
+       44: out_addr = 9'd104;
+       45: out_addr = 9'd360;
+       46: out_addr = 9'd232;
+       47: out_addr = 9'd488;
+       49: out_addr = 9'd280;
+       50: out_addr = 9'd152;
+       51: out_addr = 9'd408;
+       52: out_addr = 9'd88;
+       53: out_addr = 9'd344;
+       54: out_addr = 9'd216;
+       55: out_addr = 9'd472;
+       56: out_addr = 9'd56;
+       57: out_addr = 9'd312;
+       58: out_addr = 9'd184;
+       59: out_addr = 9'd440;
+       60: out_addr = 9'd120;
+       61: out_addr = 9'd376;
+       62: out_addr = 9'd248;
+       63: out_addr = 9'd504;
+       65: out_addr = 9'd260;
+       66: out_addr = 9'd132;
+       67: out_addr = 9'd388;
+       68: out_addr = 9'd68;
+       69: out_addr = 9'd324;
+       70: out_addr = 9'd196;
+       71: out_addr = 9'd452;
+       73: out_addr = 9'd292;
+       74: out_addr = 9'd164;
+       75: out_addr = 9'd420;
+       76: out_addr = 9'd100;
+       77: out_addr = 9'd356;
+       78: out_addr = 9'd228;
+       79: out_addr = 9'd484;
+       81: out_addr = 9'd276;
+       82: out_addr = 9'd148;
+       83: out_addr = 9'd404;
+       84: out_addr = 9'd84;
+       85: out_addr = 9'd340;
+       86: out_addr = 9'd212;
+       87: out_addr = 9'd468;
+       89: out_addr = 9'd308;
+       90: out_addr = 9'd180;
+       91: out_addr = 9'd436;
+       92: out_addr = 9'd116;
+       93: out_addr = 9'd372;
+       94: out_addr = 9'd244;
+       95: out_addr = 9'd500;
+       97: out_addr = 9'd268;
+       98: out_addr = 9'd140;
+       99: out_addr = 9'd396;
+       101: out_addr = 9'd332;
+       102: out_addr = 9'd204;
+       103: out_addr = 9'd460;
+       105: out_addr = 9'd300;
+       106: out_addr = 9'd172;
+       107: out_addr = 9'd428;
+       108: out_addr = 9'd108;
+       109: out_addr = 9'd364;
+       110: out_addr = 9'd236;
+       111: out_addr = 9'd492;
+       113: out_addr = 9'd284;
+       114: out_addr = 9'd156;
+       115: out_addr = 9'd412;
+       117: out_addr = 9'd348;
+       118: out_addr = 9'd220;
+       119: out_addr = 9'd476;
+       121: out_addr = 9'd316;
+       122: out_addr = 9'd188;
+       123: out_addr = 9'd444;
+       124: out_addr = 9'd124;
+       125: out_addr = 9'd380;
+       126: out_addr = 9'd252;
+       127: out_addr = 9'd508;
+       129: out_addr = 9'd258;
+       130: out_addr = 9'd130;
+       131: out_addr = 9'd386;
+       133: out_addr = 9'd322;
+       134: out_addr = 9'd194;
+       135: out_addr = 9'd450;
+       137: out_addr = 9'd290;
+       138: out_addr = 9'd162;
+       139: out_addr = 9'd418;
+       141: out_addr = 9'd354;
+       142: out_addr = 9'd226;
+       143: out_addr = 9'd482;
+       145: out_addr = 9'd274;
+       146: out_addr = 9'd146;
+       147: out_addr = 9'd402;
+       149: out_addr = 9'd338;
+       150: out_addr = 9'd210;
+       151: out_addr = 9'd466;
+       153: out_addr = 9'd306;
+       154: out_addr = 9'd178;
+       155: out_addr = 9'd434;
+       157: out_addr = 9'd370;
+       158: out_addr = 9'd242;
+       159: out_addr = 9'd498;
+       161: out_addr = 9'd266;
+       163: out_addr = 9'd394;
+       165: out_addr = 9'd330;
+       166: out_addr = 9'd202;
+       167: out_addr = 9'd458;
+       169: out_addr = 9'd298;
+       170: out_addr = 9'd170;
+       171: out_addr = 9'd426;
+       173: out_addr = 9'd362;
+       174: out_addr = 9'd234;
+       175: out_addr = 9'd490;
+       177: out_addr = 9'd282;
+       179: out_addr = 9'd410;
+       181: out_addr = 9'd346;
+       182: out_addr = 9'd218;
+       183: out_addr = 9'd474;
+       185: out_addr = 9'd314;
+       186: out_addr = 9'd186;
+       187: out_addr = 9'd442;
+       189: out_addr = 9'd378;
+       190: out_addr = 9'd250;
+       191: out_addr = 9'd506;
+       193: out_addr = 9'd262;
+       195: out_addr = 9'd390;
+       197: out_addr = 9'd326;
+       198: out_addr = 9'd198;
+       199: out_addr = 9'd454;
+       201: out_addr = 9'd294;
+       203: out_addr = 9'd422;
+       205: out_addr = 9'd358;
+       206: out_addr = 9'd230;
+       207: out_addr = 9'd486;
+       209: out_addr = 9'd278;
+       211: out_addr = 9'd406;
+       213: out_addr = 9'd342;
+       214: out_addr = 9'd214;
+       215: out_addr = 9'd470;
+       217: out_addr = 9'd310;
+       219: out_addr = 9'd438;
+       221: out_addr = 9'd374;
+       222: out_addr = 9'd246;
+       223: out_addr = 9'd502;
+       225: out_addr = 9'd270;
+       227: out_addr = 9'd398;
+       229: out_addr = 9'd334;
+       231: out_addr = 9'd462;
+       233: out_addr = 9'd302;
+       235: out_addr = 9'd430;
+       237: out_addr = 9'd366;
+       238: out_addr = 9'd238;
+       239: out_addr = 9'd494;
+       241: out_addr = 9'd286;
+       243: out_addr = 9'd414;
+       245: out_addr = 9'd350;
+       247: out_addr = 9'd478;
+       249: out_addr = 9'd318;
+       251: out_addr = 9'd446;
+       253: out_addr = 9'd382;
+       254: out_addr = 9'd254;
+       255: out_addr = 9'd510;
+       257: out_addr = 9'd257;
+       259: out_addr = 9'd385;
+       261: out_addr = 9'd321;
+       263: out_addr = 9'd449;
+       265: out_addr = 9'd289;
+       267: out_addr = 9'd417;
+       269: out_addr = 9'd353;
+       271: out_addr = 9'd481;
+       273: out_addr = 9'd273;
+       275: out_addr = 9'd401;
+       277: out_addr = 9'd337;
+       279: out_addr = 9'd465;
+       281: out_addr = 9'd305;
+       283: out_addr = 9'd433;
+       285: out_addr = 9'd369;
+       287: out_addr = 9'd497;
+       291: out_addr = 9'd393;
+       293: out_addr = 9'd329;
+       295: out_addr = 9'd457;
+       297: out_addr = 9'd297;
+       299: out_addr = 9'd425;
+       301: out_addr = 9'd361;
+       303: out_addr = 9'd489;
+       307: out_addr = 9'd409;
+       309: out_addr = 9'd345;
+       311: out_addr = 9'd473;
+       313: out_addr = 9'd313;
+       315: out_addr = 9'd441;
+       317: out_addr = 9'd377;
+       319: out_addr = 9'd505;
+       323: out_addr = 9'd389;
+       325: out_addr = 9'd325;
+       327: out_addr = 9'd453;
+       331: out_addr = 9'd421;
+       333: out_addr = 9'd357;
+       335: out_addr = 9'd485;
+       339: out_addr = 9'd405;
+       341: out_addr = 9'd341;
+       343: out_addr = 9'd469;
+       347: out_addr = 9'd437;
+       349: out_addr = 9'd373;
+       351: out_addr = 9'd501;
+       355: out_addr = 9'd397;
+       359: out_addr = 9'd461;
+       363: out_addr = 9'd429;
+       365: out_addr = 9'd365;
+       367: out_addr = 9'd493;
+       371: out_addr = 9'd413;
+       375: out_addr = 9'd477;
+       379: out_addr = 9'd445;
+       381: out_addr = 9'd381;
+       383: out_addr = 9'd509;
+       387: out_addr = 9'd387;
+       391: out_addr = 9'd451;
+       395: out_addr = 9'd419;
+       399: out_addr = 9'd483;
+       403: out_addr = 9'd403;
+       407: out_addr = 9'd467;
+       411: out_addr = 9'd435;
+       415: out_addr = 9'd499;
+       423: out_addr = 9'd459;
+       427: out_addr = 9'd427;
+       431: out_addr = 9'd491;
+       439: out_addr = 9'd475;
+       443: out_addr = 9'd443;
+       447: out_addr = 9'd507;
+       455: out_addr = 9'd455;
+       463: out_addr = 9'd487;
+       471: out_addr = 9'd471;
+       479: out_addr = 9'd503;
+       495: out_addr = 9'd495;
+       511: out_addr = 9'd511;
+       default: out_addr = 9'd0;
+    endcase;
+    end
+endmodule
